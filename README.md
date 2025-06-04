@@ -1,48 +1,33 @@
-# ✅ ToDo App — Умное приложение для задач с красивым дизайном
+---
 
-## 📝 Описание
-Это простое, но функциональное ToDo-приложение, созданное на языке Dart с использованием Flutter. Оно позволяет пользователю:
+### 📁 **2. ToDo App with Add, Delete, and Cancel Editing Features (English Version)**
 
-- Добавлять новые задачи
-- Удалять выполненные или ненужные задачи
-- Начать редактирование задачи и отменить его при необходимости
-- Наслаждаться современным, чистым дизайном интерфейса
+```markdown
+# ✅ ToDo App — Smart and Stylish Task Manager
 
-## 🔧 Основные функции
-- ➕ **Добавить задачу** — введите текст и нажмите кнопку, чтобы сохранить новую задачу.
-- 🖊️ **Редактировать задачу** — нажмите на задачу для изменения текста.
-- ❌ **Удалить задачу** — удалите задачу одним нажатием.
-- ↩️ **Отменить редактирование** — если пользователь передумал, можно отменить редактирование до сохранения.
-- 🎨 **Красивый дизайн** — адаптивный и лёгкий интерфейс в стиле Material Design.
+## 📝 Description
+A simple yet powerful ToDo app built with Dart and Flutter. This app allows users to:
 
-## 📄 Пример кода
-```dart
-// Добавление задачи
-void addTask(String title) {
-  setState(() {
-    tasks.add(Task(title: title));
-  });
-}
+- Add new tasks
+- Edit tasks
+- Cancel editing before saving
+- Delete completed or unwanted tasks
+- Enjoy a modern, clean user interface
 
-// Начало редактирования
-void startEditing(Task task) {
-  setState(() {
-    editingTask = task;
-    editingController.text = task.title;
-  });
-}
+## 🔧 Core Features
+- ➕ **Add Task** — Enter text and add a new task.
+- 🖊️ **Edit Task** — Tap a task to start editing its content.
+- ↩️ **Cancel Editing** — Discard changes before saving if you change your mind.
+- ❌ **Delete Task** — Remove tasks with a single tap.
+- 🎨 **Beautiful UI** — Clean layout with Material Design and smooth animations.
 
-// Отмена редактирования
-void cancelEditing() {
-  setState(() {
-    editingTask = null;
-    editingController.clear();
-  });
-}
+👤 Author
 
-// Удаление задачи
-void removeTask(Task task) {
-  setState(() {
-    tasks.remove(task);
-  });
-}
+Ma'murzoda Mustafo
+🛠️ Technologies Used
+
+    Flutter (Dart)
+
+    Material Design
+
+    State Management (setState)
